@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Trio: The Rule of 3</title>
+  <style>
+    :root { --bg:#0A0A0C; --card:#141418; --border:#25252C; --text:#F6F6F8; --muted:#A1A1AA; --gold:#E0A838; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+    .wrap { max-width:760px; margin:0 auto; padding:28px 20px 64px; }
+    header { display:flex; justify-content:space-between; align-items:center; padding-bottom:20px; border-bottom:1px solid var(--border); gap:12px; flex-wrap:wrap; }
+    a { color:var(--gold); text-decoration:none; }
+    .nav { display:flex; gap:16px; align-items:center; font-size:14px; }
+    .nav a { color:var(--muted); }
+    .nav a:hover { color:var(--gold); }
+    .lang-btn { background:var(--card); color:var(--gold); border:1px solid var(--border); padding:6px 12px; border-radius:999px; cursor:pointer; font-size:13px; font-weight:600; }
+    h1 { font-family:"New York",Georgia,serif; font-size:32px; margin:28px 0 6px; }
+    .updated { color:var(--muted); font-size:13px; margin-bottom:28px; }
+    section { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; margin-bottom:14px; }
+    h2 { margin:0 0 8px; font-size:17px; color:var(--gold); }
+    p { margin:0; color:#D4D4D8; font-size:15px; }
+    body.is-tr .en { display:none; }
+    body:not(.is-tr) .tr { display:none; }
+    span.tr, span.en { display:inline; }
+    body.is-tr span.en { display:none; }
+    body:not(.is-tr) span.tr { display:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" style="font-family:'New York',Georgia,serif;font-weight:700;font-size:20px;color:#F6F6F8;">TRIO</a>
+      <div class="nav">
+        <a href="index.html"><span class="en">Home</span><span class="tr">Ana Sayfa</span></a>
+        <a href="privacy.html"><span class="en">Privacy</span><span class="tr">Gizlilik</span></a>
+        <a href="support.html"><span class="en">Support</span><span class="tr">Destek</span></a>
+        <button class="lang-btn" onclick="toggleLang()">TR / EN</button>
+      </div>
+    </header>
+
+    <h1 class="en">Terms of Use & Subscription Terms</h1>
+    <h1 class="tr">Kullanım Koşulları & Abonelik Şartları</h1>
+    <div class="updated"><span class="en">Effective Date: November 11, 2026</span><span class="tr">Yürürlük Tarihi: 11 Kasım 2026</span></div>
+
+    <section>
+      <h2 class="en">1. Apple Standard EULA</h2>
+      <h2 class="tr">1. Standart Lisans Sözleşmesi (Apple EULA)</h2>
+      <p class="en">Use of Trio: The Rule of 3 is governed by Apple's Standard Licensed Application End User License Agreement (EULA), available at <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">apple.com/legal/internet-services/itunes/dev/stdeula/</a>.</p>
+      <p class="tr">Trio uygulamasının kullanımı Apple'ın Standart Son Kullanıcı Lisans Sözleşmesi (EULA) kapsamındadır: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">apple.com/legal/internet-services/itunes/dev/stdeula/</a>.</p>
+    </section>
+
+    <section>
+      <h2 class="en">2. Auto-Renewable Subscriptions & Free Trial</h2>
+      <h2 class="tr">2. Otomatik Yenilenen Abonelikler & Ücretsiz Deneme</h2>
+      <p class="en">Trio Pro Monthly and Annual plans are auto-renewable subscriptions managed by Apple StoreKit 2. Payment is charged to your Apple Account upon purchase confirmation. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Any eligible 3-day free trial converts into a recurring Annual subscription unless canceled prior to trial completion. You can manage or cancel subscriptions in Device Settings &gt; Apple Account &gt; Subscriptions. Trio Pro Lifetime is a one-time non-consumable purchase.</p>
+      <p class="tr">Trio Pro Aylık ve Yıllık planları Apple StoreKit 2 ile yönetilen otomatik yenilenen aboneliklerdir. Ödeme satın alma onayında Apple Hesabınızdan tahsil edilir ve dönem bitiminden en az 24 saat önce iptal edilmedikçe otomatik yenilenir. Uygun hesaplar için yıllık plandaki 3 günlük ücretsiz deneme, dönem bitiminden önce iptal edilmezse yıllık ücrete dönüşür. Aboneliklerinizi cihazınızdaki Ayarlar &gt; Apple Hesabı &gt; Abonelikler bölümünden yönetebilirsiniz. Ömür Boyu lisans tek seferlik satın alımdır.</p>
+    </section>
+
+    <section>
+      <h2 class="en">3. Productivity & Wellness Disclaimer</h2>
+      <h2 class="tr">3. Üretkenlik ve Bilimsel İlkeler Uyarısı</h2>
+      <p class="en">Trio's cognitive focus workflows, box-breathing reset timers, and procedural soundscapes (Brown Noise, 40 Hz Gamma binaural beats, Pink Rain) are strictly productivity tools and do not constitute medical diagnosis, clinical therapy, or psychological treatment.</p>
+      <p class="tr">Trio'daki bilişsel odak protokolleri, kutu nefesi sıfırlamaları ve akustik ses ortamları yalnızca üretkenlik ve odaklanma amaçlıdır; tıbbi tanı, klinik tedavi veya terapi yerine geçmez.</p>
+    </section>
+  </div>
+  <script>
+    function setLang(tr) { document.body.classList.toggle('is-tr', tr); document.documentElement.lang = tr ? 'tr' : 'en'; }
+    function toggleLang() { setLang(!document.body.classList.contains('is-tr')); }
+    if ((navigator.language || '').toLowerCase().startsWith('tr')) setLang(true);
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Trio: The Rule of 3</title>
+  <style>
+    :root { --bg:#0A0A0C; --card:#141418; --border:#25252C; --text:#F6F6F8; --muted:#A1A1AA; --gold:#E0A838; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+    .wrap { max-width:760px; margin:0 auto; padding:28px 20px 64px; }
+    header { display:flex; justify-content:space-between; align-items:center; padding-bottom:20px; border-bottom:1px solid var(--border); gap:12px; flex-wrap:wrap; }
+    a { color:var(--gold); text-decoration:none; }
+    .nav { display:flex; gap:16px; align-items:center; font-size:14px; }
+    .nav a { color:var(--muted); }
+    .nav a:hover { color:var(--gold); }
+    .lang-btn { background:var(--card); color:var(--gold); border:1px solid var(--border); padding:6px 12px; border-radius:999px; cursor:pointer; font-size:13px; font-weight:600; }
+    h1 { font-family:"New York",Georgia,serif; font-size:32px; margin:28px 0 8px; }
+    .sub { color:var(--muted); margin-bottom:28px; }
+    section { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; margin-bottom:14px; }
+    h2 { margin:0 0 8px; font-size:17px; color:var(--gold); }
+    p { margin:0; color:#D4D4D8; font-size:15px; }
+    body.is-tr .en { display:none; }
+    body:not(.is-tr) .tr { display:none; }
+    span.tr, span.en { display:inline; }
+    body.is-tr span.en { display:none; }
+    body:not(.is-tr) span.tr { display:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" style="font-family:'New York',Georgia,serif;font-weight:700;font-size:20px;color:#F6F6F8;">TRIO</a>
+      <div class="nav">
+        <a href="index.html"><span class="en">Home</span><span class="tr">Ana Sayfa</span></a>
+        <a href="privacy.html"><span class="en">Privacy</span><span class="tr">Gizlilik</span></a>
+        <a href="terms.html"><span class="en">Terms</span><span class="tr">Koşullar</span></a>
+        <button class="lang-btn" onclick="toggleLang()">TR / EN</button>
+      </div>
+    </header>
+
+    <h1 class="en">Support & FAQ</h1>
+    <h1 class="tr">Destek & Sık Sorulan Sorular</h1>
+    <p class="sub en">Direct support for Trio: The Rule of 3 (iOS). Average response within 24 hours.</p>
+    <p class="sub tr">Trio: The Rule of 3 (iOS) doğrudan kullanıcı desteği. Ortalama dönüş süresi 24 saat.</p>
+
+    <section>
+      <h2 class="en">How do I restore my Trio Pro purchase on a new iPhone?</h2>
+      <h2 class="tr">Yeni iPhone'da Trio Pro satın alımımı nasıl geri yüklerim?</h2>
+      <p class="en">Open Trio &gt; Settings &gt; Upgrade to Trio Pro (or open any Pro gate) and tap "Restore Purchases" at the bottom of the screen. Ensure you are signed into the same Apple Account used for the original purchase.</p>
+      <p class="tr">Trio &gt; Ayarlar &gt; Trio Pro'ya Yükselt ekranını açıp en alttaki "Satın Alımları Geri Yükle" düğmesine dokunun. İlk satın alımda kullandığınız Apple Hesabıyla giriş yaptığınızdan emin olun.</p>
+    </section>
+
+    <section>
+      <h2 class="en">How do I back up or transfer my tasks without cloud sync?</h2>
+      <h2 class="tr">Bulut senkronizasyonu olmadan görevlerimi nasıl yedeklerim?</h2>
+      <p class="en">Because Trio keeps 100% of your data offline, go to Settings &gt; Data Sovereignty &amp; Backup &gt; "Export Telemetry as JSON". You can restore that backup anytime using "Import Backup from JSON File" or "Paste JSON Backup".</p>
+      <p class="tr">Trio verilerinizi %100 cihaz içinde tutar. Ayarlar &gt; Veri Egemenliği ve Yedek &gt; "Verileri JSON Olarak Dışa Aktar" ile yedeğinizi alabilir; "JSON Dosyasından Yedeği İçe Aktar" veya "JSON Metni Yapıştırarak İçe Aktar" seçenekleriyle geri yükleyebilirsiniz.</p>
+    </section>
+
+    <section>
+      <h2 class="en">How do 40 Hz Gamma & Brown Noise work offline?</h2>
+      <h2 class="tr">40 Hz Gama ve Brown Noise çevrimdışı nasıl çalışır?</h2>
+      <p class="en">All acoustic presets are mathematically synthesized on-device via AVAudioEngine in real time — zero audio files are downloaded. For 40 Hz Gamma binaural beats, stereo headphones are recommended.</p>
+      <p class="tr">Tüm ses ortamları AVAudioEngine ile gerçek zamanlı ve matematiksel olarak cihazınızda üretilir; internet veya ses dosyası indirimi gerekmez. 40 Hz Gama binaural dalgalar için kulaklık önerilir.</p>
+    </section>
+
+    <section>
+      <h2 class="en">Contact Developer Support</h2>
+      <h2 class="tr">Geliştirici Desteği</h2>
+      <p class="en">Need help, found a bug, or have feedback? Email <a href="mailto:kasapgilozgur@gmail.com">kasapgilozgur@gmail.com</a>.</p>
+      <p class="tr">Yardıma mı ihtiyacınız var veya geri bildirim paylaşmak mı istiyorsunuz? <a href="mailto:kasapgilozgur@gmail.com">kasapgilozgur@gmail.com</a> adresine e-posta gönderebilirsiniz.</p>
+    </section>
+  </div>
+  <script>
+    function setLang(tr) { document.body.classList.toggle('is-tr', tr); document.documentElement.lang = tr ? 'tr' : 'en'; }
+    function toggleLang() { setLang(!document.body.classList.contains('is-tr')); }
+    if ((navigator.language || '').toLowerCase().startsWith('tr')) setLang(true);
+  </script>
+</body>
+</html>

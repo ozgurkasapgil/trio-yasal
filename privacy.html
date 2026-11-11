@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Trio: The Rule of 3</title>
+  <style>
+    :root { --bg:#0A0A0C; --card:#141418; --border:#25252C; --text:#F6F6F8; --muted:#A1A1AA; --gold:#E0A838; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+    .wrap { max-width:760px; margin:0 auto; padding:28px 20px 64px; }
+    header { display:flex; justify-content:space-between; align-items:center; padding-bottom:20px; border-bottom:1px solid var(--border); gap:12px; flex-wrap:wrap; }
+    a { color:var(--gold); text-decoration:none; }
+    .nav { display:flex; gap:16px; align-items:center; font-size:14px; }
+    .nav a { color:var(--muted); }
+    .nav a:hover { color:var(--gold); }
+    .lang-btn { background:var(--card); color:var(--gold); border:1px solid var(--border); padding:6px 12px; border-radius:999px; cursor:pointer; font-size:13px; font-weight:600; }
+    h1 { font-family:"New York",Georgia,serif; font-size:32px; margin:28px 0 6px; }
+    .updated { color:var(--muted); font-size:13px; margin-bottom:28px; }
+    section { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; margin-bottom:14px; }
+    h2 { margin:0 0 8px; font-size:17px; color:var(--gold); }
+    p { margin:0; color:#D4D4D8; font-size:15px; }
+    body.is-tr .en { display:none; }
+    body:not(.is-tr) .tr { display:none; }
+    span.tr, span.en { display:inline; }
+    body.is-tr span.en { display:none; }
+    body:not(.is-tr) span.tr { display:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" style="font-family:'New York',Georgia,serif;font-weight:700;font-size:20px;color:#F6F6F8;">TRIO</a>
+      <div class="nav">
+        <a href="index.html"><span class="en">Home</span><span class="tr">Ana Sayfa</span></a>
+        <a href="terms.html"><span class="en">Terms</span><span class="tr">Koşullar</span></a>
+        <a href="support.html"><span class="en">Support</span><span class="tr">Destek</span></a>
+        <button class="lang-btn" onclick="toggleLang()">TR / EN</button>
+      </div>
+    </header>
+
+    <h1 class="en">Privacy Policy</h1>
+    <h1 class="tr">Gizlilik Politikası</h1>
+    <div class="updated"><span class="en">Effective Date: November 11, 2026 • Developer: Ahmet Özgür Kasapgil</span><span class="tr">Yürürlük Tarihi: 11 Kasım 2026 • Geliştirici: Ahmet Özgür Kasapgil</span></div>
+
+    <section>
+      <h2 class="en">1. 100% On-Device Data Architecture</h2>
+      <h2 class="tr">1. %100 Cihaz İçi Veri Mimarisi</h2>
+      <p class="en">Trio: The Rule of 3 stores all tasks, If-Then anchors, Someday Vault ideas, focus durations, and app preferences exclusively on your device using Apple's local UserDefaults storage (Privacy Manifest API Reason CA92.1). Trio operates without user accounts, backend servers, cloud syncing, or third-party AI APIs.</p>
+      <p class="tr">Trio: The Rule of 3; tüm görevlerinizi, Eğer/O Zaman çapalarınızı, Fikir Kasası kayıtlarınızı, odak sürelerinizi ve tercihlerinizi yalnızca cihazınızda, Apple'ın yerel UserDefaults alanında (Privacy Manifest Nedeni: CA92.1) saklar. Hesap girişi, harici sunucu veya üçüncü taraf yapay zeka API'si içermez.</p>
+    </section>
+
+    <section>
+      <h2 class="en">2. Zero Tracking & Zero Third-Party SDKs</h2>
+      <h2 class="tr">2. Sıfır Takip ve Sıfır Üçüncü Taraf SDK</h2>
+      <p class="en">Trio collects no personal data, behavioral telemetry, device identifiers, IP addresses, or crash profiles for advertising or tracking purposes (<code>NSPrivacyTracking = false</code>). No third-party analytics, attribution, or ad networks are embedded in the application.</p>
+      <p class="tr">Trio hiçbir kişisel veriyi, davranışsal telemetriyi, cihaz kimliğini veya kullanım geçmişini reklam ya da takip amacıyla toplamaz (<code>NSPrivacyTracking = false</code>). Uygulama içinde üçüncü taraf analitik veya reklam SDK'sı bulunmaz.</p>
+    </section>
+
+    <section>
+      <h2 class="en">3. StoreKit 2 Subscriptions & In-App Purchases</h2>
+      <h2 class="tr">3. StoreKit 2 Abonelikleri ve Satın Alımlar</h2>
+      <p class="en">Optional Trio Pro subscriptions and lifetime purchases are processed strictly through Apple's StoreKit 2 framework. Trio never receives, stores, or has access to your credit card number, billing address, or Apple Account credentials.</p>
+      <p class="tr">İsteğe bağlı Trio Pro abonelikleri ve ömür boyu lisans işlemleri yalnızca Apple'ın resmi StoreKit 2 altyapısı üzerinden yürütülür. Trio kredi kartı bilgilerinizi veya Apple Hesabı verilerinizi görmez ve saklamaz.</p>
+    </section>
+
+    <section>
+      <h2 class="en">4. Your Data Sovereignty (Export & Deletion)</h2>
+      <h2 class="tr">4. Veri Egemenliği (Dışa Aktarım ve Silme)</h2>
+      <p class="en">You retain full control over your focus history. Inside Settings, you can export your entire history as standard JSON or restore a local backup anytime, and permanently delete all local app data anytime by uninstalling Trio from your iPhone.</p>
+      <p class="tr">Verileriniz üzerindeki egemenlik tamamen size aittir. Ayarlar ekranından istediğiniz an tüm geçmişinizi standart JSON olarak dışa aktarabilir, kendi yedeğinizi içe aktarabilir veya Trio'yu iPhone'unuzdan kaldırarak tüm yerel verileri kalıcı olarak silebilirsiniz.</p>
+    </section>
+
+    <section>
+      <h2 class="en">5. Contact & Privacy Questions</h2>
+      <h2 class="tr">5. İletişim ve Gizlilik Soruları</h2>
+      <p class="en">For any privacy inquiries regarding Trio: The Rule of 3, contact <a href="mailto:kasapgilozgur@gmail.com">kasapgilozgur@gmail.com</a>.</p>
+      <p class="tr">Trio gizlilik uygulamaları hakkında sorularınız için <a href="mailto:kasapgilozgur@gmail.com">kasapgilozgur@gmail.com</a> adresinden ulaşabilirsiniz.</p>
+    </section>
+  </div>
+  <script>
+    function setLang(tr) { document.body.classList.toggle('is-tr', tr); document.documentElement.lang = tr ? 'tr' : 'en'; }
+    function toggleLang() { setLang(!document.body.classList.contains('is-tr')); }
+    if ((navigator.language || '').toLowerCase().startsWith('tr')) setLang(true);
+  </script>
+</body>
+</html>
